@@ -214,5 +214,3 @@ else:
 
 #plot
 plot_path(g.grid, path)
-
-
