@@ -1,0 +1,14 @@
+<launch>
+  <!-- Launch the gmapping node -->
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <param name="base_frame" value="base_footprint" />
+    <param name="odom_frame" value="odom" />
+    <param name="map_frame" value="map" />
+    <param name="delta" value="0.05" />
+    <param name="linearUpdate" value="0.2" />
+    <param name="angularUpdate" value="0.1" />
+    <param name="particles" value="50" />
+    <param name="maxUrange" value="5.0" />
+    <param name="maximumScore" value="5.0" />
+  </node>
+</launch>
